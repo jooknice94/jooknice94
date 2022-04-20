@@ -1,0 +1,80 @@
+1.	 
+#include <stdio.h>
+ #include <cmath>
+int main()
+{
+ float x1 = 5; // Задаем координаты точек
+ float x2 = 7;
+ float y1 = 2;
+ float y2 = 9;
+ float length;
+ length = sqrt((x2 - x1)*(x2 - x1) + (y2 - y1)*(y2 - y1)); // По теореме Пифагора вычисляем расстояние между точками
+ printf("%f", length);// Выводим длину
+ return 0;
+}
+2.	 
+#include <stdio.h>
+int main()
+{
+ int A = 3;// Задаем точки
+ int B = 7;
+ int C = 9;
+ int AC = C - A; // Вычисляем длину отрезков
+ int BC = C - B; 
+ int sum = AC + BC; // Складываем длины отрезков
+ printf("%i\n", AC); // Выводим полученные данные
+ printf("%i\n", BC);
+ printf("%i", sum);
+ return 0;
+}
+3.	 
+ #include <stdio.h>
+int main()
+{
+ int A = 3;// Задаем точки
+ int B = 9;
+ int C = 7;
+ int AC = C - A; // Вычисляем длину отрезков
+ int BC = B - C;
+ int sum = AC * BC; // Умножаем длины отрезков
+ printf("%i", sum); // Выводим полученные данные
+return 0;
+}
+4.	 
+#include <stdio.h>
+int main()
+{
+ int x1 = 8; // Задаем координаты точек
+ int x2 = 12;
+ int y1 = 10;
+ int y2 = 25;
+ int a = x2 - x1; // Вычисляем длины сторон
+ int b = y2 - y1;
+ int p = 2 * a + 2 * b; // Вычисляем периметр
+ int s = a * b; // Вычисляем площадь
+ printf("%i\n", p); // Выводим полученные данные
+ printf("%i", s);
+ return 0;
+}
+5.	 
+#include <stdio.h>
+#include <cmath>
+
+int main()
+{
+ float x1 = 5; // Задаем координаты точек
+ float x2 = 7;
+ float x3 = 4;
+ float y1 = 2;
+ float y2 = 9;
+ float y3 = 10;
+ float a = sqrt((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)); // По теореме Пифагора вычисляем расстояние между точками
+ float b = sqrt((x1 - x3) * (x1 - x3) + (y3 - y1) * (y3 - y1));
+ float c = sqrt((x2 - x3) * (x2 - x3) + (y3 - y2) * (y3 - y2));
+ float p = a + b + c; // Вычисляем периметр
+ float p2 = (a + b + c) / 2; // Вычисляем полупериметр для нахождения площади
+ float s = sqrt(p2 * (p2 - a) * (p2 - b) * (p2 - c)); // Вычисляем площадь
+ printf("%f\n", p);// Выводим полученные данные
+ printf("%f", s);
+ return 0;
+}
